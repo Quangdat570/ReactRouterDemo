@@ -8,9 +8,9 @@ import {
     createRoutesFromElements,
 } from "react-router-dom";
 
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 import Layout from "./components/layout/Layout";
 import PostDetail from "./pages/post-detail/PostDetail";
 
