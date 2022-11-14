@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <main>
-            <h3>Deals Of The Day</h3>
+            <h3 className="text-center mt-4">Deals Of The Day</h3>
             <div className="list-product d-flex">
                 <div className="product col-4">
                     <img src="https://parkofideas.com/luchiana/demo/wp-content/uploads/2020/10/luchiana-3022279061-260x230.jpg" alt=""  className="w-100"/>
