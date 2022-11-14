@@ -9,7 +9,7 @@ const Layout = () => {
         <div>
             <header>
                 <Navigation />
-                <Carosel/>
+                
                 
             </header>
 

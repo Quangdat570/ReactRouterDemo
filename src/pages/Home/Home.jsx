@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import  Carosel  from "../../components/Carosel/Carosel";
 const Home = () => {
     const posts = useLoaderData();
 
     return (
         <main>
+            <Carosel/>
             <h3 className="text-center mt-4">Deals Of The Day</h3>
             <div className="list-product d-flex">
                 <div className="product col-4">
