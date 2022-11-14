@@ -1,11 +1,11 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const PostDetail = () => {
     const post = useLoaderData();
 
     return (
-        <div>
+        <div >
             <h1>{post.title}</h1>
             <div>{post.body}</div>
         </div>

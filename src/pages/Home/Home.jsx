@@ -1,22 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
     const posts = useLoaderData();
 
     return (
         <main>
-            <h1>Danh sách bài viết</h1>
-
-            <div>
-                {posts.map((post) => (
-                    <Link key={post.id} to={"/posts/" + post.id}>
-                        <div>
-                            <h3>{post.title}</h3>
-                            <p>{post.body}</p>
-                        </div>
-                    </Link>
-                ))}
+            <h3>Deals Of The Day</h3>
+            <div className="list-product d-flex">
+                <div className="product col-4">
+                    <img src="https://parkofideas.com/luchiana/demo/wp-content/uploads/2020/10/luchiana-3022279061-260x230.jpg" alt=""  className="w-100"/>
+                    <div className="info d-flex justify-content-evenly">
+                    <i className="bi bi-handbag"></i>
+                    <i className="bi bi-plus-lg"></i>
+                    <i className="bi bi-eye"></i>
+                    </div>
+                </div>
+                <div className="product col-4">
+                    <img src="https://parkofideas.com/luchiana/demo/wp-content/uploads/2020/10/luchiana-3022279061-260x230.jpg" alt="" className="w-100"/>
+                    <div className="info d-flex justify-content-evenly">
+                    <i className="bi bi-handbag"></i>
+                    <i className="bi bi-plus-lg"></i>
+                    <i className="bi bi-eye"></i>
+                    </div>
+                </div>
+                <div className="product col-4">
+                    <img src="https://parkofideas.com/luchiana/demo/wp-content/uploads/2020/10/luchiana-3022279061-260x230.jpg" alt="" className="w-100"/>
+                    <div className="info d-flex justify-content-evenly">
+                    <i className="bi bi-handbag"></i>
+                    <i className="bi bi-plus-lg"></i>
+                    <i className="bi bi-eye"></i>
+                    </div>
+                </div>
             </div>
         </main>
     );
