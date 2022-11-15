@@ -1,36 +1,24 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import {
-    Route,
-    RouterProvider,
     createBrowserRouter,
     createRoutesFromElements,
+    Route,
+    RouterProvider,
 } from "react-router-dom";
-
+import App from "./App";
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
-import Layout from "./components/layout/Layout";
-import PostDetail from "./pages/post-detail/PostDetail";
 
 const routes = createRoutesFromElements(
-    <Route element={<Layout />}>
+    <Route element={<App />}>
         <Route
-            path="/"
+            index
             element={<Home />}
             loader={Home.loader}
-            errorElement={<div>Có gì đó không ổn :(</div>}
+            errorElement={<div>Some thing wrong :(</div>}
         />
-
-        <Route
-            path="/posts/:postId"
-            element={<PostDetail />}
-            loader={PostDetail.loader}
-            errorElement={<div>Có gì đó không ổn :(</div>}
-        />
-
-        <Route path="*" element={<div>Page Not Found</div>} />
+        <Route path="*" element={<div>404 | Page Not Found</div>} />
     </Route>
 );
 

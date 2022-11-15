@@ -7,7 +7,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://touchup.qodeinteractive.com/wp-content/uploads/2020/02/home-1-rev-img-1.jpg"
+          src="./image 1.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +18,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://touchup.qodeinteractive.com/wp-content/uploads/2020/02/home6.jpg"
+          src="./image 2.jpg"
           alt="Second slide"
         />
 
