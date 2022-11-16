@@ -2,11 +2,12 @@ import React from "react";
 import { Card, Col, Container, Row, Image, Ratio, Button,Nav } from "react-bootstrap";
 import { Link, useLoaderData, NavLink } from "react-router-dom";
 import Banner from "./Banner";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import {  BsPerson,BsHandbag  } from "react-icons/bs";
+
+import { AiOutlineCheck } from "react-icons/ai";
 import styles from './Home.module.css'
+
+
 const NextArrow = ({ className, style, onClick }) => {
     return (
         <div className={className} onClick={onClick} {...style}>
@@ -185,10 +186,65 @@ const Home = () => {
 
             <Container fluid >
                <Row>
-                <Col className="px-0">
-                    <img src="./image 13.jpg" alt="" ></img>
+                <Col className={styles.banner2}>
+                    <img src="./image 13.jpg" alt="" className={styles.imgbanner2}>
+                    </img>
+                        <div className={styles.headbanner}>Aesthetic & corrective <span className={styles.span2}></span></div>
+                        
+                        <div className={styles.subbanner}>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt</div>
                 </Col> 
                </Row>
+            </Container>
+
+            <Container className={styles.productx}>
+                <Row>
+                    <Col lg={4}>
+                        <Card>
+                            <Card.Img src="./image 17.jpg"></Card.Img>
+                            <Card.Body>
+                                <Card.Text className={styles.headbuy}>Basic</Card.Text>
+                                <Card.Title className={styles.pricemonth}>$ 390 <span className={styles.month}>Monthly</span></Card.Title>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Ut pharetra augue aliquet risus,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Mauris vitae turpis maximus,</Card.Text>
+                                <Card.Text className={styles.subprice}> <span><AiOutlineCheck/></span> Donec in neque tincidunt,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Vivamus efficitur dui a arcu</Card.Text>
+                                <Button  variant="light" className={styles.buttonBuy}>Buy Now</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col lg={4}>
+                        <Card>
+                            <Card.Img src="./image 18.jpg"></Card.Img>
+                            <Card.Body>
+                                <Card.Text className={styles.headbuy}>Professional</Card.Text>
+                                <Card.Title  className={styles.pricemonth}>$ 1290 <span className={styles.month}>Monthly</span></Card.Title>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span>  Ut pharetra augue aliquet risus,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Mauris vitae turpis maximus,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Donec in neque tincidunt,</Card.Text>
+                                <Card.Text className={styles.subprice}> <span><AiOutlineCheck/></span> Vivamus efficitur dui a arcu</Card.Text>
+                                <Button  variant="light" className={styles.buttonBuy}>Buy Now</Button>
+
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col lg={4}>
+                        <Card>
+                            <Card.Img src="./image 19.jpg"></Card.Img>
+                            <Card.Body>
+                                <Card.Text className={styles.headbuy}>Advanced</Card.Text>
+                                <Card.Title  className={styles.pricemonth}>$ 2590 <span className={styles.month}>Monthly</span></Card.Title>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Ut pharetra augue aliquet risus,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Mauris vitae turpis maximus,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Donec in neque tincidunt,</Card.Text>
+                                <Card.Text className={styles.subprice}><span><AiOutlineCheck/></span> Vivamus efficitur dui a arcu</Card.Text>
+                                <Button  variant="light" className={styles.buttonBuy}>Buy Now</Button>
+
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </Container>
         </main>
     );

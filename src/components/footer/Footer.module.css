@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.footer {
+    background-color: #282828;
+    padding: 48px 0;
+}
+.card {
+    background-color: #282828;
+    border: none;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #aba9a8;
+}
+.email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+.phone {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+.imgfooter {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.h4 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    line-height: 1.1em;
+    letter-spacing: -.015em;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.span {
+    font-size: 12px;
+    line-height: 1.833em;
+    font-weight: 400;
+    color: #f7847e;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+.times {
+    color: #aba9a8;
+    text-transform: uppercase;
+}
+.subfooter {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.footer3 {
+    padding: 0 30px;
+}
