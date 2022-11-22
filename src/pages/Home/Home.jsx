@@ -193,12 +193,19 @@ const Home = () => {
                         
                         <div className={styles.subbanner}>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt</div>
                 </Col> 
+                <Col className={styles.banner3}>
+                    <img src="./image 20.jpg" alt="" className={styles.imgbanner2}>
+                    </img>
+                        <div className={styles.headbanner}>Aesthetic & corrective <span className={styles.span2}></span></div>
+                        
+                        <div className={styles.subbanner}>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt</div>
+                </Col> 
                </Row>
             </Container>
 
             <Container className={styles.productx}>
                 <Row>
-                    <Col lg={4}>
+                    <Col lg={4} xs={12} sm={6}>
                         <Card>
                             <Card.Img src="./image 17.jpg"></Card.Img>
                             <Card.Body>
@@ -213,7 +220,7 @@ const Home = () => {
                         </Card>
                     </Col>
 
-                    <Col lg={4}>
+                    <Col xs={12} sm={6} lg={4}>
                         <Card>
                             <Card.Img src="./image 18.jpg"></Card.Img>
                             <Card.Body>
@@ -229,7 +236,7 @@ const Home = () => {
                         </Card>
                     </Col>
 
-                    <Col lg={4}>
+                    <Col xs={12} sm={6} lg={4}>
                         <Card>
                             <Card.Img src="./image 19.jpg"></Card.Img>
                             <Card.Body>
